@@ -1,0 +1,13 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "types": ["jest", "node", "@types/jest"],
+    "strict": true,
+    "typeRoots": ["./node-modules/@types/", "./src/@types/"]
+  }
+}
