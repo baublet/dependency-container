@@ -27,6 +27,7 @@ Concepts:
 ### Getting Started
 
 ```ts
+import { createServiceContainer } from "@baublet/service-container";
 
 // An asynchronous service factory that itself accesses another service
 async function priceService(container: ServiceContainer) {
