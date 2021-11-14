@@ -1,6 +1,6 @@
 {
   "name": "@baublet/service-container",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A simple service container for TypeScript.",
   "main": "src/index.ts",
   "files": [
@@ -14,12 +14,13 @@
   ],
   "keywords": [
     "dependencies",
+    "dependency container",
     "dependency injection",
     "dependency management",
     "inversion of control",
     "ioc",
     "service container",
-    "dependency container"
+    "services"
   ],
   "scripts": {
     "build": "tsc",
