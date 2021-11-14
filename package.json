@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "publish": "npm run test && npm run build && npm publish --access public",
+    "publish-version": "npm run test && npm run build && npm publish --access public",
     "test": "jest"
   },
   "author": "Ryan Poe",

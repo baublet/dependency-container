@@ -61,3 +61,25 @@ async function getProduct(sku: string, container = createServiceContainer()) {
   return `${translations.en.price}: ${price}`;
 }
 ```
+
+## Contributing
+
+This package is around 50 lines of code, so contributing has been made as simple as possible. Clone the package, and simple run `npm install`, and you're good to go!
+
+### Tests
+
+We require 100% test coverage. To run the tests:
+
+```bash
+$ npm run test
+```
+
+### Publishing new versions
+
+Update the new version in `package.json`, push your code to the `main` branch, and run:
+
+```bash
+$ npm run publish-version
+```
+
+This will run our tests (ensuring we're at 100% coverage), build our TypeScript code, and publish the latest version to NPM.
