@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baublet/dependency-container.git"
+    "url": "git+https://github.com/baublet/service-container.git"
   },
   "bugs": {
-    "url": "https://github.com/baublet/dependency-container/issues"
+    "url": "https://github.com/baublet/service-container/issues"
   },
   "homepage": "https://github.com/baublet/dependency-container#readme"
 }
