@@ -4,6 +4,7 @@
   "description": "A simple service container for TypeScript.",
   "main": "src/index.ts",
   "scripts": {
+    "publish": "npm publish --access public",
     "test": "jest"
   },
   "author": "",
