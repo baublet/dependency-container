@@ -3,6 +3,15 @@
   "version": "0.3.0",
   "description": "A simple service container for TypeScript.",
   "main": "src/index.ts",
+  "files": [
+    "src/index.js",
+    "src/index.js.map",
+    "src/index.ts",
+    "src/serviceContainer.js",
+    "src/serviceContainer.js.map",
+    "src/serviceContainer.ts",
+    "README.md"
+  ],
   "keywords": [
     "dependencies",
     "dependency injection",
