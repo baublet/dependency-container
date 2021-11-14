@@ -1,13 +1,13 @@
 {
-  "name": "service-container",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@baublet/service-container",
+  "version": "0.1.0",
+  "description": "A simple service container for TypeScript.",
   "main": "src/index.ts",
   "scripts": {
     "test": "jest"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "esbuild": "^0.13.13",
@@ -15,5 +15,13 @@
     "jest": "^27.3.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baublet/dependency-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baublet/dependency-container/issues"
+  },
+  "homepage": "https://github.com/baublet/dependency-container#readme"
 }

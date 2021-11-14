@@ -10,7 +10,7 @@ TBD
 
 Service containers are lightweight wrappers around the javascript `Map` object that provide clear responsibilities and safe typing in your applications.
 
-Containers should be scoped per request or other discrete unit of work. **They are not intended to be long-lived,** although they can be if necessary. Under the hood, we use a `Map`, not a `WeakMap`, so you can be sure that if a service was ever initialized, it won't be garbage collected until the container itself is garbage collected.
+Containers should be scoped per request or other discrete unit of work. **They are not intended to be long-lived,** although they can be if necessary. Under the hood, we use a `Map` to store references to factories and their services.
 
 Concepts:
 
