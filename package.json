@@ -1,6 +1,6 @@
 {
   "name": "@baublet/service-container",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A tiny, simple service container for JavaScript and TypeScript.",
   "main": "src/index.ts",
   "files": [
@@ -44,5 +44,5 @@
   "bugs": {
     "url": "https://github.com/baublet/service-container/issues"
   },
-  "homepage": "https://github.com/baublet/dependency-container#readme"
+  "homepage": "https://github.com/baublet/service-container#readme"
 }
