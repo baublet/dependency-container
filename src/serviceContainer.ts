@@ -1,6 +1,10 @@
 export type ServiceFactory = (serviceContainer: ServiceContainer) => any;
 
-type ServiceFactoryResult<T> = T extends () => infer R ? R : never;
+type ServiceFactoryResult<T> = T extends (serviceContainer: ServiceContainer) => Promise<infer R>
+  ? R
+  : T extends (serviceContainer: ServiceContainer) => infer R
+  ? R
+  : never;
 
 export type ServiceContainer = {
   get<T extends ServiceFactory>(factory: T): ServiceFactoryResult<T>;

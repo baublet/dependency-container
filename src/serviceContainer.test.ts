@@ -87,3 +87,19 @@ describe("basic functionality", () => {
     });
   });
 });
+
+describe("types", () => {
+  const serviceResult = {
+    test: "123",
+    doAThing: () => Promise.resolve("hello"),
+  };
+  const testService = async (container: ServiceContainer) => {
+    return Promise.resolve(serviceResult);
+  };
+
+  it("types the testService properly", async () => {
+    const container = createServiceContainer();
+    const service = await container.get(testService);
+    expect(service).toEqual(serviceResult);
+  });
+});
