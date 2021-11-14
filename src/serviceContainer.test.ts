@@ -2,10 +2,9 @@ import { createServiceContainer, ServiceContainer } from "./serviceContainer";
 
 describe("basic functionality", () => {
   const testSyncService = () => ({ sync: "service" });
-  const testAsyncService = () =>
-    Promise.resolve({
-      async: "service",
-    });
+  const testAsyncService = async () => ({
+    async: "service",
+  });
   const testLayeredInjection = async (services: ServiceContainer) => {
     const asyncService = await services.get(testAsyncService);
     const syncService = services.get(testSyncService);
@@ -41,6 +40,12 @@ describe("basic functionality", () => {
   it("lets use async service containers properly", () => {
     const container = createServiceContainer();
     const service = container.get(testAsyncService);
+
+    // Should be Promise<{ async: string }>
+    // @ts-expect-error
+    const typeCheck: { async: string } = service;
+    expect(typeCheck).toEqual(service);
+
     return expect(service).resolves.toEqual({
       async: "service",
     });

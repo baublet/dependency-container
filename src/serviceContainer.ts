@@ -1,7 +1,7 @@
 export type ServiceFactory = (serviceContainer: ServiceContainer) => any;
 
 type ServiceFactoryResult<T> = T extends (serviceContainer: ServiceContainer) => Promise<infer R>
-  ? R
+  ? Promise<R>
   : T extends (serviceContainer: ServiceContainer) => infer R
   ? R
   : never;
