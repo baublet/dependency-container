@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "description": "A simple service container for TypeScript.",
   "main": "src/index.ts",
+  "keywords": [
+    "dependencies",
+    "dependency injection",
+    "dependency management",
+    "inversion of control",
+    "ioc",
+    "service container",
+    "dependency container"
+  ],
   "scripts": {
     "publish": "npm publish --access public",
     "test": "jest"
   },
-  "author": "",
+  "author": "Ryan Poe",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.2",
