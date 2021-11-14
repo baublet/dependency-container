@@ -4,7 +4,13 @@ A simple service container for TypeScript.
 
 ## Getting started
 
-TBD
+```bash
+# Yarn
+$ yarn add @baublet/service-container
+
+# NPM
+$ npm install --save @baublet/service-container
+```
 
 ## Documentation
 
@@ -21,6 +27,7 @@ Concepts:
 ### Getting Started
 
 ```ts
+
 // An asynchronous service factory that itself accesses another service
 async function priceService(container: ServiceContainer) {
   const database = await container.get(databaseService);

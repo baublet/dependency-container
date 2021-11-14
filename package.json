@@ -13,6 +13,7 @@
     "dependency container"
   ],
   "scripts": {
+    "build": "tsc",
     "publish": "npm publish --access public",
     "test": "jest"
   },
