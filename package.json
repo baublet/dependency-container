@@ -1,8 +1,8 @@
 {
   "name": "@baublet/service-container",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "A tiny, simple service container for JavaScript and TypeScript.",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "files": [
     "src/index.js",
     "src/index.js.map",
