@@ -7,6 +7,7 @@ type ServiceFactoryResult<T> = T extends (serviceContainer: ServiceContainer) =>
   : never;
 
 export type ServiceContainer = {
+  getAll: () => {factory: unknown, service: unknown }[];
   get<T extends ServiceFactory>(factory: T): ServiceFactoryResult<T>;
   set<T extends ServiceFactory>(
     factory: T,
@@ -20,6 +21,16 @@ export const createServiceContainer: () => ServiceContainer = () => {
   const serviceMap: Map<ServiceFactory, any> = new Map();
 
   const serviceContainer: ServiceContainer = {
+    getAll: () => {
+      const result: {factory: unknown, service: unknown }[] = [];
+      serviceMap.forEach((service, factory) => {
+        result.push({
+          factory,
+          service
+        });
+      });
+      return result;
+    },
     get: (factory) => {
       if (!serviceMap.has(factory)) {
         serviceMap.set(factory, factory(serviceContainer));

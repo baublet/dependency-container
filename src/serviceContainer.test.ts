@@ -1,4 +1,4 @@
-import { createServiceContainer, ServiceContainer } from "./serviceContainer";
+import { ServiceContainer, createServiceContainer } from "./serviceContainer";
 
 describe("basic functionality", () => {
   const testSyncService = () => ({ sync: "service" });
@@ -90,6 +90,15 @@ describe("basic functionality", () => {
     expect(container.get(testSyncService)).toEqual({
       sync: "service",
     });
+  });
+
+  it("gets all", () => {
+    const container = createServiceContainer();
+    const service = container.get(testAsyncService);
+
+    expect(container.getAll()).toEqual([
+      { factory: testAsyncService, service },
+    ]);
   });
 });
 
