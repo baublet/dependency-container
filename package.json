@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "publish-version": "(npm run test && npm run build && npm publish --access public); rm -rf src/*.js*",
+    "publish-version": "(yarn test && yarn build && yarn publish --access public); rm -rf src/*.js*",
     "test": "jest"
   },
   "author": "Ryan Poe",
