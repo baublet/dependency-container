@@ -1,6 +1,6 @@
 {
   "name": "@baublet/service-container",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A tiny, simple service container for JavaScript and TypeScript.",
   "main": "src/index.js",
   "files": [
@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "publish-version": "npm run test && npm run build && npm publish --access public",
+    "publish-version": "(npm run test && npm run build && npm publish --access public); rm -rf src/*.js*",
     "test": "jest"
   },
   "author": "Ryan Poe",
