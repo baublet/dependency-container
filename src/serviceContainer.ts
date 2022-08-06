@@ -1,4 +1,4 @@
-export type ServiceFactory = (serviceContainer: ServiceContainer) => any;
+export type ServiceFactory<T = any> = (serviceContainer: ServiceContainer) => T;
 
 type ServiceFactoryResult<T> = T extends (serviceContainer: ServiceContainer) => Promise<infer R>
   ? Promise<R>
