@@ -3,3 +3,5 @@ export {
   ServiceFactory,
   ServiceContainer,
 } from "./serviceContainer";
+
+export { createVariadicService } from "./createVariadicService";

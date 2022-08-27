@@ -1,6 +1,6 @@
 {
   "name": "@baublet/service-container",
-  "version": "0.7.0",
+  "version": "0.8.3",
   "description": "A tiny, simple service container for JavaScript and TypeScript.",
   "main": "src/index.js",
   "files": [
@@ -10,6 +10,9 @@
     "src/serviceContainer.js",
     "src/serviceContainer.js.map",
     "src/serviceContainer.ts",
+    "src/createVariadicService.js",
+    "src/createVariadicService.js.map",
+    "src/createVariadicService.ts",
     "README.md"
   ],
   "keywords": [
